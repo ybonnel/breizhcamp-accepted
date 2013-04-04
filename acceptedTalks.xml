@@ -44,6 +44,7 @@
         }
       </style>
       <div class="container" ng-app="AcceptedTalks" ng-controller="AcceptedTalksCtrl">
+        <h3 ng-show="loading">Chargement des speakers...</h3>
         <div class="talk ng-cloak" ng-repeat="talk in talks">
           <img class="avatar" ng-src="{{talk.speaker.avatar}}"/>
           <div class="caption">
@@ -94,10 +95,13 @@
         angular.module("AcceptedTalks", []);
         
         function AcceptedTalksCtrl($scope, $http, $log) {
+
+          $scope.loading = true;
           
           $http.jsonp("http://cfp.breizhcamp.org/accepted/jsonp?callback=JSON_CALLBACK")
             .success(function(data) {
               $scope.talks = data;
+              $scope.loading = false;
             });
           
           
