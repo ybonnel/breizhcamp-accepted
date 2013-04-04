@@ -43,7 +43,7 @@
           display:none;
         }
       </style>
-      <div class="container" ng-controller="AcceptedTalksCtrl">
+      <div class="container" ng-app="AcceptedTalks" ng-controller="AcceptedTalksCtrl">
         <div class="talk ng-cloak" ng-repeat="talk in talks">
           <img class="avatar" ng-src="{{talk.speaker.avatar}}"/>
           <div class="caption">
