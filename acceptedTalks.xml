@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+ï»¿<?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="Talks acceptés!" />
+  <ModulePrefs title="Talks acceptÃ©s!" />
   <Content type="html">
     <![CDATA[
       <div>
@@ -57,7 +57,7 @@
           </div>
           <div id="speaker{{talk.id}}" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="speakerLabel{{talk.id}}" aria-hidden="true">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Ã—</button>
               <h3 id="speakerLabel{{talk.id}}">{{talk.speaker.fullname}}</h3>
             </div>
             <div class="modal-body">
@@ -74,7 +74,7 @@
           </div>
           <div id="talk{{talk.id}}" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="talkLabel{{talk.id}}" aria-hidden="true">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Ã—</button>
               <h3 id="talkLabel{{talk.id}}">{{talk.title}}</h3>
             </div>
             <div class="modal-body">
