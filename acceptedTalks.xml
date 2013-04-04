@@ -3,7 +3,6 @@
   <ModulePrefs title="Talks acceptés!" />
   <Content type="html">
     <![CDATA[
-      <div>
       <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
       <style type="text/css">
         .talk {
@@ -111,7 +110,6 @@
           };
         }
       </script>
-    </div>
     ]]>
   </Content>
 </Module>
